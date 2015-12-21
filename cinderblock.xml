@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+	<block
+	name="OpenCFU"
+	id="com.kitschpatrol.opencfu"
+	git="https://github.com/kitschpatrol/Cinder-OpenCFU.git"
+	url="https://github.com/kitschpatrol/Cinder-OpenCFU"
+	author="Quentin Geissmann, Eric Mika."
+	summary="Bacterial Colony Counting."
+	version="1.0.0"
+	library="http://opencfu.sourceforge.net"
+	license="MIT + GPL"
+	>
+		<supports os="macosx" />
+		<supports os="msw" />	
+		<headerPattern>src/*.h</headerPattern>
+		<sourcePattern>src/*.cpp</sourcePattern>
+		<includePath system="true">include</includePath>
+		
+	</block>
+</cinder>
