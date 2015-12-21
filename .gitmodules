@@ -1,0 +1,3 @@
+[submodule "src/OpenCFU"]
+	path = src/OpenCFU
+	url = https://github.com/kitschpatrol/OpenCFU
