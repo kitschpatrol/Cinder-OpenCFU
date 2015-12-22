@@ -29,17 +29,16 @@ void OpenCFUBasicApp::setup() {
 	ci::Surface8u surface(loadImage(loadAsset("tech-epixel-test-dish.jpg")));
 	cv::Mat input(toOcv(surface));
 
-	// Set up openCFU
+	// Set OpenCFU options
 	ProcessingOptions opts;
 	opts.setImage(input);
 	opts.setThr(3);
 	opts.setThrMode(OCFU_THR_INV);
 	opts.setMinMaxRad(std::make_pair(30, 200));
-
 	opts.setTrainedClassifierPath(getAssetPath("trainedClassifier.xml").string());
-	opts.setTrainedClassifierPSPath(getAssetPath("trainedClassifierPS.xml").string()); // Hmm...
+	opts.setTrainedClassifierPSPath(getAssetPath("trainedClassifierPS.xml").string());
 
-	// Run openCFU
+	// Run OpenCFU
 	Processor processor(opts);
 	processor.runAll();
 	processor.writeResult();
@@ -66,6 +65,7 @@ void OpenCFUBasicApp::draw() {
 
 	gl::draw(mDishImage);
 
+	// Draw a circle around each found colony
 	for (unsigned int i = 0; i < mResult.size(); i++) {
 		const OneObjectRow &row = mResult.getRow(i);
 		vec2 colonyCenter = fromOcv((row.getPoint(0) + row.getPoint(2)) * 0.5);
@@ -73,7 +73,6 @@ void OpenCFUBasicApp::draw() {
 		Color colonyAverageColor = Color(row.getBGRMean()[2] / 255.0, row.getBGRMean()[1] / 255.0, row.getBGRMean()[0] / 255.0);
 		gl::color(Color(1, 1, 1));
 		gl::drawStrokedCircle(colonyCenter, colonyRadius);
-
 		gl::drawLine(colonyCenter - vec2(15, 0), colonyCenter + vec2(15, 0));
 		gl::drawLine(colonyCenter - vec2(0, 15), colonyCenter + vec2(0, 15));
 	}
