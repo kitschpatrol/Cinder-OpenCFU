@@ -6,16 +6,20 @@
 	git="https://github.com/kitschpatrol/Cinder-OpenCFU.git"
 	url="https://github.com/kitschpatrol/Cinder-OpenCFU"
 	author="Quentin Geissmann, Eric Mika."
-	summary="Bacterial Colony Counting."
+	summary="Bacterial colony counting."
 	version="1.0.0"
 	library="http://opencfu.sourceforge.net"
 	license="MIT + GPL"
 	>
-		<supports os="macosx" />
-		<supports os="msw" />	
-		<headerPattern>src/*.h</headerPattern>
-		<sourcePattern>src/*.cpp</sourcePattern>
-		<includePath system="true">include</includePath>
-		
+	<requires>org.libcinder.opencv</requires>>
+	<supports os="macosx" />
+	<supports os="msw" />	
+	<headerPattern>src/*.h</headerPattern>
+	<sourcePattern>src/*.cpp</sourcePattern>
+	<header>src/OpenCFU/src/defines.hpp</header>
+	<headerPattern>src/OpenCFU/src/processor/headers/*.hpp</headerPattern>
+	<sourcePattern>src/OpenCFU/src/processor/src/*.cpp</sourcePattern>		
+	<asset>assets/trainedClassifier.xml</asset>
+	<asset>assets/trainedClassifierPS.xml</asset>
 	</block>
 </cinder>
