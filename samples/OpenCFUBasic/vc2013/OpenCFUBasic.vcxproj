@@ -1,0 +1,241 @@
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5A2700D0-CE3A-4562-9DEF-6D33430D790B}</ProjectGuid>
+    <RootNamespace>OpenCFUBasic</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\..\..\Cinder\include";..\..\..\..\..\Cinder\blocks\OpenCV3\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0601;_WINDOWS;NOMINMAX;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\..\..\Cinder\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset)_d.lib;OpenGL32.lib;%(AdditionalDependencies);..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_calib3d300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_core300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_features2d300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_flann300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_hal300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_imgproc300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_ml300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_objdetect300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_photo300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_shape300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_stitching300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_superres300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_ts300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_video300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_videostab300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\ippicvmt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\..\..\Cinder\lib\msw\$(PlatformTarget)"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\..\..\Cinder\include";..\..\..\..\..\Cinder\blocks\OpenCV3\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0601;_WINDOWS;NOMINMAX;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\..\..\Cinder\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset)_d.lib;OpenGL32.lib;%(AdditionalDependencies);..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_calib3d300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_core300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_features2d300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_flann300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_hal300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_imgproc300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_ml300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_objdetect300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_photo300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_shape300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_stitching300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_superres300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_ts300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_video300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_videostab300d.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\ippicvmt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\..\..\Cinder\lib\msw\$(PlatformTarget)"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\..\..\Cinder\include";..\..\..\..\..\Cinder\blocks\OpenCV3\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0601;_WINDOWS;NOMINMAX;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\..\..\Cinder\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset).lib;OpenGL32.lib;%(AdditionalDependencies);..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_calib3d300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_core300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_features2d300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_flann300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_hal300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_imgproc300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_ml300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_objdetect300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_photo300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_shape300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_stitching300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_superres300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_ts300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_video300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_videostab300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\ippicvmt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\..\..\Cinder\lib\msw\$(PlatformTarget)"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\..\..\Cinder\include";..\..\..\..\..\Cinder\blocks\OpenCV3\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0601;_WINDOWS;NOMINMAX;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\..\..\Cinder\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset).lib;OpenGL32.lib;%(AdditionalDependencies);..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_calib3d300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_core300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_features2d300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_flann300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_hal300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_imgproc300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_ml300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_objdetect300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_photo300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_shape300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_stitching300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_superres300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_ts300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_video300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\opencv_videostab300.lib;..\..\..\..\..\Cinder\blocks\OpenCV3\lib\vc2013\x86\ippicvmt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\..\..\Cinder\lib\msw\$(PlatformTarget)"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <ClCompile Include="..\src\OpenCFUBasicApp.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\ArgumentParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\ContourFamily.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\ContourSpliter.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Features.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\MaskROI.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Predictor.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\ProcessingOptions.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Processor.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Result.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Step_1.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Step_2.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Step_3.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Step_4.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Step_BaseClass.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Step_ColourCluster.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Step_FiltGUI.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Step_FiltHS.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Step_FiltIPosition2D.cpp" />
+    <ClCompile Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\src\Step_FiltLik.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\config.h" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\defines.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\ArgumentParser.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\ContourFamily.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\ContourSpliter.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Features.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\MaskROI.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Predictor.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\ProcessingOptions.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Processor.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Result.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Step_1.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Step_2.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Step_3.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Step_4.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Step_BaseClass.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Step_ColourCluster.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Step_FiltGUI.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Step_FiltHS.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Step_FiltIPosition2D.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCFU\src\OpenCFU\src\processor\headers\Step_FiltLik.hpp" />
+    <ClInclude Include="..\..\..\..\..\Cinder\blocks\OpenCV3\include\CinderOpenCV.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
