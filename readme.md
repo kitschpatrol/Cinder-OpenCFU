@@ -1,6 +1,6 @@
 #Cinder-OpenCFU
 
-**Cinder-OpenCFU is a very minimal integration of the [OpenCFU](http://opencfu.sourceforge.net) project with [Cinder](http://libcinder.org). OpenCFU uses image-processing techniques to automate counting of bacterial colonies grown in petri dishes.**
+**Cinder-OpenCFU is a very minimal integration of the [OpenCFU](http://opencfu.sourceforge.net) project with [Cinder](http://libcinder.org). OpenCFU uses image-processing techniques to automate counting bacterial colonies grown in petri dishes.**
 
 <img width="400" src="cinderblock.png" />
 
@@ -10,6 +10,10 @@ Note that this block includes the OpenCFU project as a git submodule. Clone the 
 	git clone https://github.com/kitschpatrol/Cinder-OpenCFU --recursive 
 
 From there, take a look at the OpenCFUBasic example or create a new project through Tinderbox.
+
+## Origin
+
+OpenCFU was created by [Quentin Geissmann](https://github.com/qgeissmann), with improvements by [Nathananael Lampe](https://github.com/natl) and [Mac Cowell](https://github.com/100ideas).
 
 
 ## Compatibility
