@@ -9,7 +9,7 @@
 	summary="Bacterial colony counting."
 	version="1.0.0"
 	library="http://opencfu.sourceforge.net"
-	license="MIT + GPL"
+	license="GPL"
 	>
 	<requires>org.libcinder.opencv</requires>
 	<supports os="macosx" />
