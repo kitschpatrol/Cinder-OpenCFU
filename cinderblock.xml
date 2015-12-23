@@ -18,7 +18,13 @@
 	<sourcePattern>src/*.cpp</sourcePattern>
 	<header>src/OpenCFU/src/defines.hpp</header>
 	<headerPattern>src/OpenCFU/src/processor/headers/*.hpp</headerPattern>
-	<sourcePattern>src/OpenCFU/src/processor/src/*.cpp</sourcePattern>		
+	<sourcePattern>src/OpenCFU/src/processor/src/*.cpp</sourcePattern>
+	<platform os="msw">
+		<includePath>src</includePath>		
+		<includePath>src/OpenCFU/src</includePath>
+		<includePath>src/OpenCFU/src/processor/headers</includePath>
+		<includePath>src/OpenCFU/src/processor/src</includePath>
+	</platform>
 	<asset>assets/trainedClassifier.xml</asset>
 	<asset>assets/trainedClassifierPS.xml</asset>
 	</block>

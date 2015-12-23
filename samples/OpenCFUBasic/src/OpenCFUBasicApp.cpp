@@ -1,3 +1,8 @@
+// Uncomment to deal with vsprintf linkage errors on Win x64.
+//#include <Windows.h>
+//#include <stdio.h>
+//int (WINAPIV * __vsnprintf)(char *, size_t, const char*, va_list) = _vsnprintf;
+
 #include "cinder/app/App.h"
 #include "cinder/app/RendererGl.h"
 #include "cinder/gl/gl.h"
@@ -26,6 +31,8 @@ private:
 
 void OpenCFUBasicApp::setup() {
 	// Load dish image
+	
+
 	ci::Surface8u surface(loadImage(loadAsset("tech-epixel-test-dish.jpg")));
 	cv::Mat input(toOcv(surface));
 

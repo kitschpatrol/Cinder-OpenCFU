@@ -1,0 +1,190 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{03C9755E-5879-4CDD-88E1-53C55D9A2208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCFU">
+      <UniqueIdentifier>{10E09DBA-B574-463C-8A29-EBE84EC84794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCFU\src">
+      <UniqueIdentifier>{F45ECFFA-EAE8-4B96-8543-030A4F9E4AD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCFU\src\OpenCFU">
+      <UniqueIdentifier>{02DE2CDF-B0EE-4342-BDEE-87354D7B5D95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCFU\src\OpenCFU\src">
+      <UniqueIdentifier>{0429A38E-55F3-4B8D-BD0C-E4E941BAC145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCFU\src\OpenCFU\src\processor">
+      <UniqueIdentifier>{A20E064D-8716-41E3-BBA3-BB264885A6FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCFU\src\OpenCFU\src\processor\headers">
+      <UniqueIdentifier>{E97A58C4-5FC3-44CF-8894-70228F75EDBD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCFU\src\OpenCFU\src\processor\src">
+      <UniqueIdentifier>{960262BB-6BC1-4FF2-AA85-B6308E4EE50C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCV3">
+      <UniqueIdentifier>{C70FC0E4-87A3-4363-B6D4-EDD48822EE96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCV3\include">
+      <UniqueIdentifier>{86436701-E16A-457D-A043-172719D0209F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\OpenCFUBasicApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\OpenCFUBasicApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\config.h">
+      <Filter>Blocks\OpenCFU\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\defines.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\ArgumentParser.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\ContourFamily.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\ContourSpliter.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Features.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\MaskROI.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Predictor.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\ProcessingOptions.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Processor.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Result.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Step_1.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Step_2.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Step_3.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Step_4.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Step_BaseClass.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Step_ColourCluster.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Step_FiltGUI.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Step_FiltHS.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Step_FiltIPosition2D.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenCFU\src\processor\headers\Step_FiltLik.hpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\headers</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\ArgumentParser.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\ContourFamily.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\ContourSpliter.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Features.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\MaskROI.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Predictor.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\ProcessingOptions.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Processor.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Result.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Step_1.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Step_2.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Step_3.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Step_4.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Step_BaseClass.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Step_ColourCluster.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Step_FiltGUI.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Step_FiltHS.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Step_FiltIPosition2D.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\OpenCFU\src\processor\src\Step_FiltLik.cpp">
+      <Filter>Blocks\OpenCFU\src\OpenCFU\src\processor\src</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\OpenCV3\include\CinderOpenCV.h">
+      <Filter>Blocks\OpenCV3\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -23,6 +23,7 @@ Tested against the [Cinder master branch](https://github.com/cinder/Cinder/commi
 Tinderbox-generated project files are known to work on:
 
 - Mac OS X 10.11 x64 with Xcode 7.2
+- Windows 10 x86 and x64 with VisualStudio 2015 Community Edition
 
 ## Known Issues
 Anything in OpenCFU that loads images with OpenCV's imagecodecs won't work, since Cinder's OpenCV library does not include this dependency. You can get around this pretty easily by using Cinder's image loading and handling functions instead. (See the basic example.)
@@ -35,7 +36,6 @@ Note that this block simply builds the wrapped library from source, it does not 
 
 ##TODO
 
-- Test on Windows.
 - Nicer, more Cinder-esque API.
 - Asynchronous image processing.
 - Hook into Cinder's logging API.
