@@ -113,3 +113,5 @@
 /* #undef size_t */
 
 #define INSTALLDIR ""
+
+//#define HAVE_CV_IMAGECODECS
