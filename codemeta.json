@@ -1,0 +1,52 @@
+{
+  "@context": "https://w3id.org/codemeta/3.1",
+  "@type": "SoftwareSourceCode",
+  "name": "Cinder-OpenCFU",
+  "identifier": "com.kitschpatrol.opencfu",
+  "version": "1.0.0",
+  "description": "CinderBlock for counting bacterial colonies with a very minimal integration of the OpenCFU project.",
+  "author": [
+    {
+      "@type": "Person",
+      "email": "eric@ericmika.com",
+      "name": "Eric Mika",
+      "url": "https://ericmika.com"
+    }
+  ],
+  "keywords": [
+    "cinder",
+    "cinderblock",
+    "opencfu",
+    "colony-counting",
+    "image-analysis",
+    "opencv"
+  ],
+  "programmingLanguage": "C++",
+  "operatingSystem": ["macOS", "Windows"],
+  "url": "https://github.com/kitschpatrol/Cinder-OpenCFU",
+  "codeRepository": "https://github.com/kitschpatrol/Cinder-OpenCFU.git",
+  "issueTracker": "https://github.com/kitschpatrol/Cinder-OpenCFU/issues",
+  "license": "https://spdx.org/licenses/GPL-3.0-or-later",
+  "dateCreated": "2015-12-21",
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Cinder",
+      "codeRepository": "https://github.com/cinder/Cinder.git",
+      "version": "0.9.1dev"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "OpenCFU",
+      "url": "https://opencfu.sourceforge.net",
+      "codeRepository": "https://github.com/kitschpatrol/OpenCFU.git",
+      "version": "3.9.0"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Cinder-OpenCV3",
+      "identifier": "org.libcinder.opencv",
+      "codeRepository": "https://github.com/cinder/Cinder-OpenCV3.git"
+    }
+  ]
+}

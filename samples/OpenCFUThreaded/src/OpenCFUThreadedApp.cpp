@@ -36,7 +36,7 @@ private:
 };
 
 void OpenCFUThreadedApp::setup() {
-	CI_LOG_V("Press the space bar to find colonies in the image.");
+	CI_LOG_I("Press the space bar to find colonies in the image.");
 	mDishSurface = Surface8u::create(loadImage(loadAsset("tech-epixel-test-dish.jpg")));
 	mDishTexture = gl::Texture2d::create(*mDishSurface);
 }
@@ -80,7 +80,7 @@ void OpenCFUThreadedApp::analyze(Surface8uRef surface) {
 		// Update results on the main thread
 		ci::app::App::dispatchAsync([this, result, analysisTimer]() {
 			CI_LOG_V("Finished dish analysis.");
-			CI_LOG_V("OpenCFU found " << result.size() << " colonies in " << analysisTimer.getSeconds() << " seconds.");
+			CI_LOG_I("OpenCFU found " << result.size() << " colonies in " << analysisTimer.getSeconds() << " seconds.");
 			mResult = result;
 		});
 	});

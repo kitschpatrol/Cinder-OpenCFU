@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <cinder>
 	<block
-	name="OpenCFU"
-	id="com.kitschpatrol.opencfu"
-	git="https://github.com/kitschpatrol/Cinder-OpenCFU.git"
-	url="https://github.com/kitschpatrol/Cinder-OpenCFU"
-	author="Quentin Geissmann, Eric Mika."
-	summary="Bacterial colony counting."
-	version="1.0.0"
-	library="http://opencfu.sourceforge.net"
-	license="GPL"
+		name="OpenCFU"
+		id="com.kitschpatrol.opencfu"
+		git="https://github.com/kitschpatrol/Cinder-OpenCFU.git"
+		url="https://github.com/kitschpatrol/Cinder-OpenCFU"
+		author="Eric Mika, Quentin Geissmann"
+		summary="CinderBlock for counting bacterial colonies with a very minimal integration of the OpenCFU project."
+		version="1.0.0"
+		library="https://opencfu.sourceforge.net"
+		license="GPL-3.0-or-later"
 	>
-		<requires>org.libcinder.opencv</requires>
 		<supports os="macosx" />
-		<supports os="msw" />	
+		<supports os="msw" />
+		<requires>org.libcinder.opencv</requires>
+
 		<headerPattern>src/*.h</headerPattern>
 		<sourcePattern>src/*.cpp</sourcePattern>
+
 		<header>src/OpenCFU/src/defines.hpp</header>
 		<headerPattern>src/OpenCFU/src/processor/headers/*.hpp</headerPattern>
 		<sourcePattern>src/OpenCFU/src/processor/src/*.cpp</sourcePattern>
+
 		<platform os="msw">
-			<includePath>src</includePath>		
+			<includePath>src</includePath>
 			<includePath>src/OpenCFU/src</includePath>
 			<includePath>src/OpenCFU/src/processor/headers</includePath>
 			<includePath>src/OpenCFU/src/processor/src</includePath>
 		</platform>
+
 		<asset>assets/trainedClassifier.xml</asset>
 		<asset>assets/trainedClassifierPS.xml</asset>
 	</block>
